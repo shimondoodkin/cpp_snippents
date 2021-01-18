@@ -6,7 +6,9 @@
 #include <utility>
 
 // ring buffer in c++14
+// scaels up when full using resource pool
 // notice that it never scales down
+// todo: maybe to cache the pointer of *working_pool.rbegin() and of *working_pool.begin()
 
 template <typename T, size_t resourse_size>
 class RollingFiFo
