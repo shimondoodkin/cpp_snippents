@@ -52,7 +52,7 @@ private:
 	void manage_resourse_pop()
 	{
 		if (head == resourse_size) {
-			resourse_pool.push(move(working_pool[0]));
+			resourse_pool.push(std::move(working_pool[0]));
 			working_pool.erase(working_pool.begin());
 			head = 0;
 		}
