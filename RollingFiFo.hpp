@@ -6,6 +6,7 @@
 #include <utility>
 
 // ring buffer in c++14
+// notice that it never scales down
 
 template <typename T, size_t resourse_size>
 class RollingFiFo
